@@ -1,0 +1,200 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: "Calibri";
+}
+
+header {
+  position:fixed;
+  height:50px;
+  width:100%;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+  height:35px;
+  margin-top:10px;
+}
+
+header .brand {
+  padding-top:10px;
+  float:right;
+  color:white;
+  font-size:20px;
+}
+
+.container {
+  width:1170px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.main {
+  text-align:center;
+  height:750px;
+  padding-top:200px;
+  padding-bottom:100px;
+  color:white;
+  background-image:url(https://www.grcbowling.com/wp-content/uploads/2020/03/GettyImages-1203426591-scaled.jpg);
+  background-size:cover;
+}
+
+.main h1 {
+  font-family:"Times New Roman";
+  font-size:100px;
+  color:yellow; 
+  animation:animate 2.5s linear infinite; 
+}
+
+.outline {
+  text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@keyframes animate {
+  0% { 
+    opacity: 0; 
+  } 
+  50% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+}
+
+.main h2 {
+  font-size:38px;
+}
+
+.paragraph-main {
+  font-size:20px;
+  padding-top:20px;
+}
+
+.second {
+  text-align:center;
+  color:white;
+  height:1000px;
+  background-image:url(https://media.wired.com/photos/5e5ebdd9bd2cfe00085b5621/master/w_2560%2Cc_limit/Science_vaccine_118385790.jpg);
+  background-size:cover;
+}
+
+.second h1 {
+  padding-top:200px;
+  font-size:35px;
+  padding-bottom:50px;
+  text-shadow:-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.second iframe {
+  opacity: 50%;
+  transition:opacity 0.5s;
+}
+
+.second iframe:hover {
+  opacity:100%;
+  transition:opacity 0.5s;
+}
+
+.third {
+  color:white;
+  height:640px;
+  background-image:url(https://www.xmple.com/wallpaper/black-red-gradient-linear-1920x1080-c2-000000-ff0000-a-90-f-14.svg);
+  background-size:cover;
+}
+
+.third h1 {
+  padding-top:200px;
+  font-size:35px;
+  padding-bottom:30px;
+}
+
+.third p {
+  font-size:20px;
+  width:480px;
+  text-align:justify;
+}
+
+.third .bpjs {
+  padding-top:260px;
+  float:right;
+  width:600px;
+}
+
+.fourth {
+  color:white;
+  height:1000px;
+  background-color:#c80000;
+  background-position:center;
+  background-image:url(https://www.pngkit.com/png/full/292-2923668_peta-indonesia-indonesia-map-white-png.png);
+  background-size:90%;
+  background-repeat:no-repeat;
+  text-align:center;
+}
+
+.fourth h1 {
+  padding-top:75px;
+  font-size:50px;
+  padding-bottom:100px;
+}
+
+.fourth p {
+  padding-bottom:5px;
+  font-size:20px;
+}
+
+.fourth .text:focus {
+  background-color:black;
+}
+
+.fourth .text {
+  color:white;
+  margin-bottom:35px;
+  width:500px;
+  font-size:30px;
+  border:none;
+  border-bottom:2px solid white;
+  background-color:transparent;
+  text-align:center;
+  text-shadow:-2px -2px 0.9 #000, 2px -2px 1 #000, -2px 2px 1 #000, 2px 2px 1 #000;
+}
+
+.button {
+  border-radius:50px;
+  background-color:transparent;
+  border:2px solid white;
+  color:white;
+  font-size:20px;
+  padding:20px;
+  width:200px;
+  cursor:pointer;
+}
+
+.send-button:hover {
+  background-color:black;
+}
+
+footer {
+  background-color:#838383;
+	text-align:center;
+	padding:10px 0px;
+}
+
+footer ul, li {
+	display:inline;
+	margin:0px 5px;
+}
+
+.twitter, .facebook, .instagram, .linkedin, .youtube {
+	width:35px;
+	height:35px;
+	opacity:0.5;
+}
+
+.twitter:hover, .facebook:hover, .instagram:hover, .linkedin:hover, .youtube:hover {
+	opacity: 1.0;
+}
