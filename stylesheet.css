@@ -180,21 +180,21 @@ header .brand {
 
 footer {
   background-color:#838383;
-	text-align:center;
-	padding:10px 0px;
+  text-align:center;
+  padding:10px 0px;
 }
 
 footer ul, li {
-	display:inline;
-	margin:0px 5px;
+  display:inline;
+  margin:0px 5px;
 }
 
 .twitter, .facebook, .instagram, .linkedin, .youtube {
-	width:35px;
-	height:35px;
-	opacity:0.5;
+  width:35px;
+  height:35px;
+  opacity:0.5;
 }
 
 .twitter:hover, .facebook:hover, .instagram:hover, .linkedin:hover, .youtube:hover {
-	opacity: 1.0;
+  opacity: 1.0;
 }
