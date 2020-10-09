@@ -8,14 +8,14 @@ body {
 
 header {
   position:fixed;
-  height:50px;
+  height:55px;
   width:100%;
   background-color:rgba(0, 0, 0, 0.5);
 }
 
 header .logo {
   height:35px;
-  margin-top:10px;
+  margin-top:13px;
 }
 
 header .brand {
@@ -26,7 +26,7 @@ header .brand {
 }
 
 .container {
-  width:1300px;
+  width:auto;
   padding-left:50px;
   padding-right:50px;
   margin-left:auto;
@@ -122,7 +122,7 @@ header .brand {
 .third .bpjs {
   padding-top:260px;
   float:right;
-  width:600px;
+  width:400px;
 }
 
 .fourth {
@@ -181,18 +181,22 @@ header .brand {
 footer {
   background-color:#838383;
   text-align:center;
-  padding:10px 0px;
+  padding-top:15px;
 }
 
-footer ul, li {
+footer p {
+  padding-bottom:10px;
+}
+
+footer .footer {
   display:inline;
-  margin:0px 5px;
 }
 
 .twitter, .facebook, .instagram, .linkedin, .youtube {
   width:35px;
   height:35px;
   opacity:0.5;
+  margin:0px 5px;
 }
 
 .twitter:hover, .facebook:hover, .instagram:hover, .linkedin:hover, .youtube:hover {
