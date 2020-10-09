@@ -1,234 +1,230 @@
-/*Tablet Responsive------------------------------------------------------*/
-@media (max-width:1000px) {
-.container {
-  width:100%;
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: "Calibri";
 }
 
 header {
-  height:40px;
+  position:fixed;
+  width:100%;
 }
 
-header .logo {
-  height:25px;
+.topnav {
+  z-index: 1000;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.705);
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  text-align:center;
+}
+
+.topnav a.icon {
+  background: rgba(0, 0, 0, 0);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  color: white;
+  height:45px;
   margin-top:10px;
+  margin-left:10px;
 }
 
-header .brand {
-  font-size:15px;
+.container {
+  width:auto;
+  padding-left:50px;
+  padding-right:50px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .main {
-  height:750px;
-  padding-top:150px;
+  text-align:center;
+  height:1000px;
+  padding-top:200px;
   padding-bottom:100px;
+  color:white;
+  background-image:url(https://www.grcbowling.com/wp-content/uploads/2020/03/GettyImages-1203426591-scaled.jpg);
+  background-size:cover;
 }
 
 .main h1 {
-  font-size:60px;
+  font-family:"Times New Roman";
+  font-size:100px;
+  color:yellow; 
+  animation:animate 2.5s linear infinite; 
+}
+
+.outline {
+  text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@keyframes animate {
+  0% { 
+    opacity: 0; 
+  } 
+  50% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
 }
 
 .main h2 {
-  font-size:25px;
+  font-size:38px;
 }
 
 .paragraph-main {
-  font-size:18px;
-  padding:20px;
+  font-size:20px;
+  padding-top:20px;
 }
 
 .second {
-  height:600px;
+  text-align:center;
+  color:white;
+  height:1000px;
+  background-image:url(https://media.wired.com/photos/5e5ebdd9bd2cfe00085b5621/master/w_2560%2Cc_limit/Science_vaccine_118385790.jpg);
+  background-size:cover;
 }
 
 .second h1 {
-  padding-top:100px;
-  font-size:25px;
+  padding-top:200px;
+  font-size:35px;
+  padding-bottom:50px;
+  text-shadow:-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 .second iframe {
-  width:auto;
-  height:auto;
+  opacity: 50%;
+  transition:opacity 0.5s;
+}
+
+.second iframe:hover {
+  opacity:100%;
+  transition:opacity 0.5s;
 }
 
 .third {
-  text-align:center;
-  height:550px;
+  color:white;
+  height:640px;
+  background-image:url(https://www.xmple.com/wallpaper/black-red-gradient-linear-1920x1080-c2-000000-ff0000-a-90-f-14.svg);
+  background-size:cover;
 }
 
 .third h1 {
-  padding-top:50px;
-  font-size:30px;
-  padding-bottom:15px;
+  padding-top:200px;
+  font-size:35px;
+  padding-bottom:30px;
 }
 
-/*HELP, how to made the paragraph align at the center?*/
 .third p {
   font-size:20px;
   width:480px;
+  text-align:justify;
 }
 
 .third .bpjs {
-  padding-top:100px;
+  padding-top:260px;
+  float:right;
   width:400px;
-  float:none;
 }
 
 .fourth {
-  height:750px;
+  color:white;
+  height:1000px;
   background-color:#c80000;
+  background-position:center;
+  background-image:url(https://www.pngkit.com/png/full/292-2923668_peta-indonesia-indonesia-map-white-png.png);
+  background-size:90%;
+  background-repeat:no-repeat;
+  text-align:center;
 }
 
 .fourth h1 {
   padding-top:75px;
-  font-size:40px;
-  padding-bottom:50px;
+  font-size:50px;
+  padding-bottom:100px;
 }
 
 .fourth p {
-  font-size:15px;
+  padding-bottom:5px;
+  font-size:20px;
+}
+
+.fourth .text:focus {
+  background-color:black;
 }
 
 .fourth .text {
+  color:white;
   margin-bottom:35px;
-  width:300px;
-  font-size:18px;
+  width:500px;
+  font-size:30px;
+  border:none;
+  border-bottom:2px solid white;
+  background-color:transparent;
+  text-align:center;
+  text-shadow:-2px -2px 0.9 #000, 2px -2px 1 #000, -2px 2px 1 #000, 2px 2px 1 #000;
 }
 
 .button {
-  font-size:15px;
-  padding:10px;
-  width:100px;
+  border-radius:50px;
+  background-color:transparent;
+  border:2px solid white;
+  color:white;
+  font-size:20px;
+  padding:20px;
+  width:200px;
+  cursor:pointer;
+}
+
+.send-button:hover {
+  background-color:black;
+}
+
+footer {
+  background-color:#838383;
+  text-align:center;
+  padding-top:15px;
 }
 
 footer p {
   padding-bottom:10px;
 }
 
-.twitter, .facebook, .instagram, .linkedin, .youtube {
-	width:30px;
-	height:30px;
-}  
-}
-
-/*Mobile Responsive------------------------------------------------------*/
-@media (max-width:550px) {
-header {
-  height:25px;
-}
-
-header .logo {
-  height:20px;
-  margin-top:5px;
-}
-
-header .brand {
-  font-size:10px;
-  margin-top:3px;
-  margin-right:10px;
-}
-
-.container {
-  width:100%;
-  padding-left:10px;
-  padding-right:10px;
-  margin-left:none;
-  margin-right:none;
-}
- 
-.main {
-  height:500px;
-  padding-top:150px;
-  background-size:cover;
-}
- 
-.main h1 {
-  font-size:40px;
-}
-
-.main h2 {
-  font-size:14px;
-  padding:10px 0px;
-}
-
-.paragraph-main {
-  font-size:15px;
-  padding-top:0px;
-  margin:10px 20px;
-}
- 
-.second {
-  height:500px;
-  background-image:url(https://media.wired.com/photos/5e5ebdd9bd2cfe00085b5621/master/w_2560%2Cc_limit/Science_vaccine_118385790.jpg);
-  background-size:cover;
-}
-
-.second h1 {
-  padding-top:150px;
-  font-size:15px;
-  padding-bottom:25px;
-}
-
-.second iframe {
-  width:100%;
-  height:200px;
-}
- 
-.third {
-  text-align:center;
-  height:500px;
-}
-
-.third h1 {
-  padding-top:50px;
-  font-size:20px;
-  padding-bottom:15px;
-}
-
-/*HELP, how to made the paragraph align at the center?*/
-.third p {
-  font-size:15px;
-  width:300px;
-}
-
-.third .bpjs {
-  padding-top:100px;
-  width:250px;
-  float:none;
-}
-
-.fourth {
-  height:750px;
-  background-color:#c80000;
-}
-
-.fourth h1 {
-  padding-top:75px;
-  font-size:25px;
-  padding-bottom:50px;
-}
-
-.fourth p {
-  font-size:15px;
-}
-
-.fourth .text {
-  margin-bottom:35px;
-  width:250px;
-  font-size:18px;
-}
-
-.button {
-  font-size:15px;
-  padding:10px;
-  width:100px;
+footer .footer {
+  display:inline;
 }
 
 .twitter, .facebook, .instagram, .linkedin, .youtube {
-	width:20px;
-	height:20px;
-} 
+  width:35px;
+  height:35px;
+  opacity:0.5;
+  margin:0px 5px;
+}
 
-footer p {
-  font-size:12px;
-} 
+.twitter:hover, .facebook:hover, .instagram:hover, .linkedin:hover, .youtube:hover {
+  opacity: 1.0;
 }
