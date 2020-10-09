@@ -6,18 +6,27 @@
     <title>Progate</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   
   <body>
     <header>
-      <div class="container">
-        <img class="logo" src="https://i.ibb.co/2ZgD5vH/logo-dhanarahadyan.png"/>
-        <h1 class="brand">Registration of Indonesia Covid-19 Vaccination</h1>
+      <div class="topnav">
+        <img class="active" src="https://i.ibb.co/2ZgD5vH/logo-dhanarahadyan.png"/>
+        <div id="myLinks">
+          <a href="#main">Home</a>
+          <a href="#second">Vaccine Explained</a>
+          <a href="#third">Cost</a>
+          <a href="#fourth">Registration</a>
+        </div>>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </header>
     
     <!--main section-->
-    <div class="main">
+    <div class="main" id="main">
       <div class="container">
         <h1>ATTENTION!</h1>
         <h2 class="outline">COVID-19 Vaccine Now Officially Available</h2>
@@ -29,7 +38,7 @@
     </div>
     
     <!--second section-->
-    <div class="second">
+    <div class="second" id="second">
       <div class="container">
         <h1>Before that, let's see how a vaccine works!</h1>
         <iframe class="youtube_" width="800" height="450" src="https://www.youtube.com/embed/rb7TVW77ZCs">
@@ -38,7 +47,7 @@
     </div>
 
     <!--third section-->
-    <div class="third">
+    <div class="third" id="third">
       <div class="container">
         <img class="bpjs" src="https://bpjs-kesehatan.go.id/bpjs//themes/webbpjs/img/logo/logo-bpjs.png"/>
         <h1>Zero Cost For Indonesian Citizen!</h1>
@@ -49,7 +58,7 @@
     </div>
     
     <!--fourth section-->
-    <div class="fourth">
+    <div class="fourth" id="fourth">
       <div class="container">
         <div class="contact">
           <h1>Registration Form</h1>
@@ -77,6 +86,6 @@
       </div>
       <p>Copyright 2020 © dhanarahadyan</p>
     </footer>
-
+    <script src="script.js"></script>
   </body>
 </html>
